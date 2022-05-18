@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+:root {
+    --dark-green: #285433;
+    --mid-green: #346A40;
+    --light-green: #599066;
+    --Yellow-green: #ACC968;
+    --light-pink: #DA9C9C;
+
+
+}
+
+html {
+    box-sizing:border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+/*
+*, *:before, *after {
+    box-sizing: inherit;
+}
+*/
+body{
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    align-items: center;
+
+    background-image: url(images/tictactoe.svg);
+}
+
+.wrapper{
+    width: 100vw;
+    height: auto;
+}
+
+
+
+h1 {
+    font-family: 'Gaegu', cursive;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    font-size: 4em;
+    margin: 0;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    margin: 0;
+}
+
+
+button {
+    width: 120px;
+    height: 40px;
+    border-radius: 15px;
+    border: 0;
+    margin: 20px;
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+
+    color: black;
+    background-color: var(--light-pink);
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--Yellow-green);
+}
+
+.board {
+    margin:0 auto;
+    width: 590px;
+    height: 750px;
+    background-color: var(--dark-green);
+}
+
+.squarectn{
+    margin: 15px 50px;;
+    display: flex;
+}
+
+.square {
+    width: 160px;
+    height: 160px;
+    background-color: white;
+    border: 2px solid var(--dark-green);
+    display: flex;
+    align-items: center;
+
+}
+
+.square:hover {
+    background-color: var(--Yellow-green);
+}
+
+img {
+    width: 130px;
+    height: 130px;
+    border: 0;
+    position: block;
+    padding-left: 10px;
+}
